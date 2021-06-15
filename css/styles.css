@@ -1,0 +1,68 @@
+body{
+    background: rgb(62, 40, 80);
+    background: radial-gradient(circle, rgba(86,34,126,1) 0%, rgb(9, 9, 48) 50%);
+}
+
+.game{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    background-color:black;
+    border-radius: 0.5em;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+}
+
+.grid button{
+    background-color: gainsboro;
+    color: darkmagenta;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1px solid darkslateblue;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+.grid button:hover{
+    background-color: thistle;
+}
+
+.footer{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer button{
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0.5em;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    background-color: darkturquoise;
+    padding: 5px;
+    width: 80px;
+    color: white;
+}
+
+.footer button:hover{
+    color: violet;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.footer span{
+    flex: 1;
+    text-align: center;
+    font-size: 15px;
+    color: blue;
+    margin: auto 0;
+
+}
